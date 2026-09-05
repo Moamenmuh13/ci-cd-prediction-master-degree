@@ -1,0 +1,21 @@
+{
+  "best_model": "Random Forest",
+  "failure_recall": 0.6963,
+  "failure_precision": 0.3608,
+  "failure_f1": 0.4753,
+  "average_inference_latency_ms": 0.062,
+  "routing_reduction_per_failure_seconds": 270.0,
+  "daily_failures_to_triage": 300,
+  "daily_caught_by_model": 208.9,
+  "daily_usd_saved": 1174.94,
+  "monthly_usd_saved": 35248.25,
+  "annual_usd_saved": 428853.68,
+  "assumptions": {
+    "pipelines_per_day": 1000,
+    "failure_rate": 0.3,
+    "manual_minutes_per_failure": 5.0,
+    "auto_minutes_per_failure": 0.5,
+    "devops_hourly_rate_usd": 75.0,
+    "savings_formula": "daily_usd = (failures \u00d7 recall_failure \u00d7 \u0394minutes / 60) \u00d7 hourly_rate"
+  }
+}

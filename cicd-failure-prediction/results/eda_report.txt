@@ -1,0 +1,233 @@
+
+==============================================================================
+CI/CD Failure Prediction — EDA Report (real GitHub data)
+==============================================================================
+Source file : /mnt/d/CareerPath/master/CI-CD-prediction/cicd-failure-prediction/data/raw/github_actions_real.csv
+Rows        : 9,772
+Columns     : 19
+
+==============================================================================
+Schema (dtypes)
+==============================================================================
+                                dtype  non_null  n_unique
+run_id                          int64      9772      9772
+repository                        str      9772        18
+workflow_name                     str      9772       623
+event                             str      9772        14
+branch                            str      9772      1396
+conclusion                        str      9772         2
+status                            str      9772         1
+created_at        datetime64[us, UTC]      9772      6157
+updated_at        datetime64[us, UTC]      9772      9367
+run_duration_sec              float64      9772      2654
+run_attempt                     int64      9772         5
+commit_sha                        str      9772      2835
+commit_message                    str      9772      2281
+commit_author                     str      9690       558
+lines_added                     int64      9772       608
+lines_deleted                   int64      9772       434
+total_changes                   int64      9772       697
+files_changed                   int64      9772       132
+commit_date       datetime64[us, UTC]      9772      2501
+
+==============================================================================
+Missing values
+==============================================================================
+               missing  percent
+commit_author       82     0.84
+
+==============================================================================
+Numerical column statistics
+==============================================================================
+                   count          mean           std           min           25%           50%           75%           max
+run_id            9772.0  2.601931e+10  1.307855e+09  1.965732e+10  2.616958e+10  2.655389e+10  2.659768e+10  2.662118e+10
+run_duration_sec  9772.0  7.012793e+03  7.600423e+04  0.000000e+00  3.500000e+01  1.150000e+02  8.070000e+02  1.913001e+06
+run_attempt       9772.0  1.037000e+00  2.040000e-01  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  6.000000e+00
+lines_added       9772.0  1.141720e+03  4.371707e+04  0.000000e+00  4.000000e+00  2.300000e+01  1.020000e+02  4.266967e+06
+lines_deleted     9772.0  6.958730e+02  5.127536e+03  0.000000e+00  1.000000e+00  7.000000e+00  3.600000e+01  1.482520e+05
+total_changes     9772.0  1.837593e+03  4.451625e+04  0.000000e+00  9.000000e+00  3.500000e+01  1.470000e+02  4.266967e+06
+files_changed     9772.0  1.420700e+01  4.416400e+01  0.000000e+00  1.000000e+00  2.000000e+00  7.000000e+00  3.000000e+02
+
+==============================================================================
+Categorical column distributions
+==============================================================================
+
+--- repository ---
+                           count  percent
+repository                               
+facebook/react               600     6.14
+microsoft/vscode             600     6.14
+tensorflow/tensorflow        600     6.14
+pytorch/pytorch              600     6.14
+nodejs/node                  600     6.14
+rust-lang/rust               600     6.14
+elastic/elasticsearch        600     6.14
+nestjs/nest                  600     6.14
+expressjs/express            600     6.14
+prisma/prisma                600     6.14
+vercel/next.js               600     6.14
+ruby/ruby                    600     6.14
+python/cpython               600     6.14
+huggingface/transformers     594     6.08
+scikit-learn/scikit-learn    479     4.90
+sveltejs/svelte              427     4.37
+pandas-dev/pandas            357     3.65
+kubernetes/kubernetes        115     1.18
+
+--- workflow_name ---
+(623 unique values — showing top 15)
+                                      count  percent
+workflow_name                                       
+CI                                      956     9.78
+CodeQL                                  512     5.24
+PR CI Comment                           291     2.98
+docs-deploy                             250     2.56
+Check labels                            247     2.53
+docs-build                              244     2.50
+Upload test stats                       209     2.14
+GitHub Actions Scan                     160     1.64
+ci                                      159     1.63
+Lint                                    154     1.58
+CircleCI artifacts redirector           132     1.35
+legacy                                  126     1.29
+(Runtime) Fuzz tests                    120     1.23
+(Shared) Manage stale issues and PRs    117     1.20
+Monaco Editor checks                    115     1.18
+
+--- event ---
+                        count  percent
+event                                 
+pull_request             4260    43.59
+push                     1745    17.86
+dynamic                  1039    10.63
+workflow_run              980    10.03
+schedule                  667     6.83
+pull_request_target       652     6.67
+issue_comment             181     1.85
+status                    132     1.35
+issues                     61     0.62
+workflow_dispatch          27     0.28
+merge_group                14     0.14
+repository_dispatch        12     0.12
+branch_protection_rule      1     0.01
+release                     1     0.01
+
+--- branch ---
+(1396 unique values — showing top 15)
+                                                              count  percent
+branch                                                                      
+main                                                           2433    24.90
+master                                                          881     9.02
+canary                                                          460     4.71
+agents/users-josh-git-agent-control-plane-docs-adrs-dfeea4a4     86     0.88
+messing-around                                                   86     0.88
+automation/bors/try                                              66     0.68
+jathu/wip-tests                                                  56     0.57
+try-perf                                                         50     0.51
+automation/bors/auto                                             42     0.43
+dependabot/vcpkg/github.com/microsoft/vcpkg-2026.05.25           36     0.37
+dependabot/github_actions/github-actions-244f3d95d4              35     0.36
+sebbie/ci/19.1.x                                                 33     0.34
+feat/bootstrap-ux-fixes                                          33     0.34
+jit-wide-int-fastpath                                            33     0.34
+test_runner/coverage-dotfile-exclude                             32     0.33
+
+--- conclusion ---
+            count  percent
+conclusion                
+success      8700    89.03
+failure      1072    10.97
+
+--- status ---
+           count  percent
+status                   
+completed   9772    100.0
+
+--- commit_author ---
+(558 unique values — showing top 15)
+                       count  percent
+commit_author                        
+sampoder                 348     3.56
+dependabot[bot]          320     3.27
+eps1lon                  295     3.02
+renovate[bot]            267     2.73
+kamilmysliwiec           259     2.65
+poteto                   179     1.83
+tensorflower-gardener    171     1.75
+hsbt                     150     1.53
+elasticsearchmachine     148     1.51
+dummdidumm               146     1.49
+bors                     135     1.38
+jacek-prisma             125     1.28
+zklaus                   120     1.23
+trivikr                  117     1.20
+Rich-Harris              117     1.20
+
+==============================================================================
+Target distribution: conclusion (binary)
+==============================================================================
+            count  percent
+conclusion                
+success      8700    89.03
+failure      1072    10.97
+
+Imbalance ratio (success:failure) = 8.12 : 1
+
+==============================================================================
+Cross-tabulation: conclusion × event
+==============================================================================
+conclusion              failure  success  failure_rate_%
+event                                                   
+branch_protection_rule        0        1            0.00
+dynamic                     115      924           11.07
+issue_comment                10      171            5.52
+issues                        0       61            0.00
+merge_group                   0       14            0.00
+pull_request                565     3695           13.26
+pull_request_target          11      641            1.69
+push                        150     1595            8.60
+release                       1        0          100.00
+repository_dispatch           0       12            0.00
+schedule                    155      512           23.24
+status                        0      132            0.00
+workflow_dispatch             2       25            7.41
+workflow_run                 63      917            6.43
+
+==============================================================================
+Cross-tabulation: conclusion × repository
+==============================================================================
+conclusion                 failure  success  failure_rate_%
+repository                                                 
+prisma/prisma                  230      370           38.33
+rust-lang/rust                 154      446           25.67
+kubernetes/kubernetes           23       92           20.00
+pytorch/pytorch                113      487           18.83
+facebook/react                  89      511           14.83
+vercel/next.js                  80      520           13.33
+sveltejs/svelte                 54      373           12.65
+huggingface/transformers        59      535            9.93
+pandas-dev/pandas               35      322            9.80
+python/cpython                  42      558            7.00
+nodejs/node                     35      565            5.83
+expressjs/express               35      565            5.83
+microsoft/vscode                33      567            5.50
+nestjs/nest                     30      570            5.00
+tensorflow/tensorflow           22      578            3.67
+scikit-learn/scikit-learn       17      462            3.55
+ruby/ruby                       21      579            3.50
+elastic/elasticsearch            0      600            0.00
+
+==============================================================================
+Cross-tabulation: conclusion × run_attempt
+==============================================================================
+conclusion   failure  success
+run_attempt                  
+1               1000     8426
+2                 65      266
+3                  6        6
+4                  1        1
+6                  0        1
+
+==============================================================================
+End of report
+==============================================================================

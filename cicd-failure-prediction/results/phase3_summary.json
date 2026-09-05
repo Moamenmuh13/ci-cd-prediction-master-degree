@@ -1,0 +1,99 @@
+{
+  "train_sample_rows": 1000,
+  "test_sample_rows": 200,
+  "feature_counts": {
+    "numerical": 5,
+    "categorical": 66,
+    "binary": 6,
+    "text": 1814
+  },
+  "models": {
+    "Logistic Regression": {
+      "fit_time_sec": 8.049,
+      "predict_time_sec": 8.5921,
+      "feature_total": 1891,
+      "feature_counts": {
+        "numerical": 5,
+        "categorical": 66,
+        "binary": 6,
+        "text": 1814
+      },
+      "serializable": true,
+      "sample_predictions": [
+        {
+          "row": 0,
+          "predicted": "success",
+          "actual": "success"
+        },
+        {
+          "row": 1,
+          "predicted": "success",
+          "actual": "success"
+        },
+        {
+          "row": 2,
+          "predicted": "success",
+          "actual": "success"
+        }
+      ]
+    },
+    "Random Forest": {
+      "fit_time_sec": 8.987,
+      "predict_time_sec": 0.0637,
+      "feature_total": 1891,
+      "feature_counts": {
+        "numerical": 5,
+        "categorical": 66,
+        "binary": 6,
+        "text": 1814
+      },
+      "serializable": true,
+      "sample_predictions": [
+        {
+          "row": 0,
+          "predicted": "success",
+          "actual": "success"
+        },
+        {
+          "row": 1,
+          "predicted": "success",
+          "actual": "success"
+        },
+        {
+          "row": 2,
+          "predicted": "success",
+          "actual": "success"
+        }
+      ]
+    },
+    "XGBoost": {
+      "fit_time_sec": 1.616,
+      "predict_time_sec": 0.0608,
+      "feature_total": 1891,
+      "feature_counts": {
+        "numerical": 5,
+        "categorical": 66,
+        "binary": 6,
+        "text": 1814
+      },
+      "serializable": true,
+      "sample_predictions": [
+        {
+          "row": 0,
+          "predicted": "success",
+          "actual": "success"
+        },
+        {
+          "row": 1,
+          "predicted": "success",
+          "actual": "success"
+        },
+        {
+          "row": 2,
+          "predicted": "success",
+          "actual": "success"
+        }
+      ]
+    }
+  }
+}

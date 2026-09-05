@@ -1,0 +1,258 @@
+{
+  "prepared_shape": [
+    9772,
+    20
+  ],
+  "stoplist_size": 693,
+  "stoplist_sample": [
+    "aartoni",
+    "abdel",
+    "abdennacer",
+    "abu",
+    "acez",
+    "actions",
+    "actionsbot",
+    "adamchainz",
+    "addaleax",
+    "aduh",
+    "adwinwhite",
+    "aerooneqq",
+    "aeschli",
+    "aiff",
+    "ailzhang",
+    "ajasad",
+    "akaharshit",
+    "alexwortega",
+    "alig",
+    "alighahramani",
+    "also",
+    "alvaro",
+    "amandasystems",
+    "ambicuity",
+    "amd",
+    "amruth",
+    "amy",
+    "anagnorisisperipeteia",
+    "anijain",
+    "aniket"
+  ],
+  "feature_counts": {
+    "numerical": 5,
+    "categorical": 4,
+    "binary": 6,
+    "text": 1
+  },
+  "feature_lists": {
+    "numerical": [
+      "log_lines_added",
+      "log_lines_deleted",
+      "log_files_changed",
+      "commit_message_length",
+      "avg_lines_per_file"
+    ],
+    "categorical": [
+      "repository",
+      "workflow_name",
+      "branch",
+      "event"
+    ],
+    "binary": [
+      "is_large_commit",
+      "is_many_files",
+      "is_weekend_commit",
+      "is_off_hours_commit",
+      "is_bot_author",
+      "was_truncated"
+    ],
+    "text_feature": "commit_message_clean",
+    "target": "conclusion"
+  },
+  "stratified_split": {
+    "train_rows": 7817,
+    "test_rows": 1955,
+    "train": {
+      "success": 89.024,
+      "failure": 10.976
+    },
+    "test": {
+      "success": 89.054,
+      "failure": 10.946
+    }
+  },
+  "chronological_split": {
+    "train_rows": 7817,
+    "test_rows": 1955,
+    "train": {
+      "success": 87.949,
+      "failure": 12.051
+    },
+    "test": {
+      "success": 93.35,
+      "failure": 6.65
+    }
+  },
+  "top_failure_tokens": [
+    {
+      "token": "ms",
+      "log_odds": 4.8086
+    },
+    {
+      "token": "inodesfree",
+      "log_odds": 4.8086
+    },
+    {
+      "token": "timezone",
+      "log_odds": 4.8086
+    },
+    {
+      "token": "thresholds",
+      "log_odds": 4.601
+    },
+    {
+      "token": "utc",
+      "log_odds": 4.3386
+    },
+    {
+      "token": "borrow",
+      "log_odds": 3.3353
+    },
+    {
+      "token": "stderr",
+      "log_odds": 3.1992
+    },
+    {
+      "token": "br",
+      "log_odds": 2.9916
+    },
+    {
+      "token": "parens",
+      "log_odds": 2.6551
+    },
+    {
+      "token": "console",
+      "log_odds": 2.6422
+    },
+    {
+      "token": "tml",
+      "log_odds": 2.5688
+    },
+    {
+      "token": "increased",
+      "log_odds": 2.5469
+    },
+    {
+      "token": "ending",
+      "log_odds": 2.5469
+    },
+    {
+      "token": "accuracy",
+      "log_odds": 2.5469
+    },
+    {
+      "token": "sqlcommenter",
+      "log_odds": 2.5156
+    },
+    {
+      "token": "resumable",
+      "log_odds": 2.513
+    },
+    {
+      "token": "unhandled",
+      "log_odds": 2.506
+    },
+    {
+      "token": "insights",
+      "log_odds": 2.5014
+    },
+    {
+      "token": "prompts",
+      "log_odds": 2.4956
+    },
+    {
+      "token": "vitest",
+      "log_odds": 2.488
+    }
+  ],
+  "top_success_tokens": [
+    {
+      "token": "ifrt",
+      "log_odds": 3.3252
+    },
+    {
+      "token": "mute",
+      "log_odds": 3.1625
+    },
+    {
+      "token": "callinfo",
+      "log_odds": 2.9612
+    },
+    {
+      "token": "super",
+      "log_odds": 2.9612
+    },
+    {
+      "token": "reviewed",
+      "log_odds": 2.6958
+    },
+    {
+      "token": "min",
+      "log_odds": 2.6735
+    },
+    {
+      "token": "docstring",
+      "log_odds": 2.6274
+    },
+    {
+      "token": "exponent",
+      "log_odds": 2.6179
+    },
+    {
+      "token": "subnormal",
+      "log_odds": 2.6179
+    },
+    {
+      "token": "eslint",
+      "log_odds": 2.5987
+    },
+    {
+      "token": "unsigned",
+      "log_odds": 2.5791
+    },
+    {
+      "token": "lx",
+      "log_odds": 2.5791
+    },
+    {
+      "token": "ractors",
+      "log_odds": 2.5591
+    },
+    {
+      "token": "callcache",
+      "log_odds": 2.5591
+    },
+    {
+      "token": "gpt",
+      "log_odds": 2.5387
+    },
+    {
+      "token": "promise",
+      "log_odds": 2.5073
+    },
+    {
+      "token": "policy",
+      "log_odds": 2.4526
+    },
+    {
+      "token": "pipe",
+      "log_odds": 2.4066
+    },
+    {
+      "token": "descr",
+      "log_odds": 2.4066
+    },
+    {
+      "token": "promql",
+      "log_odds": 2.3828
+    }
+  ]
+}

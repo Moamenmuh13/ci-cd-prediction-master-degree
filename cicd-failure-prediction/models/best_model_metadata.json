@@ -1,0 +1,76 @@
+{
+  "model_name": "Random Forest",
+  "training_timestamp_utc": "2026-05-29T14:42:49.645952+00:00",
+  "hyperparameters": {
+    "bootstrap": "True",
+    "ccp_alpha": "0.0",
+    "class_weight": "balanced",
+    "criterion": "gini",
+    "max_depth": "25",
+    "max_features": "sqrt",
+    "max_leaf_nodes": "None",
+    "max_samples": "None",
+    "min_impurity_decrease": "0.0",
+    "min_samples_leaf": "4",
+    "min_samples_split": "10",
+    "min_weight_fraction_leaf": "0.0",
+    "monotonic_cst": "None",
+    "n_estimators": "200",
+    "n_jobs": "-1",
+    "oob_score": "False",
+    "random_state": "42",
+    "verbose": "0",
+    "warm_start": "False"
+  },
+  "test_metrics": {
+    "accuracy": 0.8317135549872122,
+    "balanced_accuracy": 0.7723123460037469,
+    "macro_f1": 0.6875329436209248,
+    "weighted_f1": 0.8533189327446605,
+    "macro_precision": 0.6593108852061567,
+    "macro_recall": 0.7723123460037469,
+    "failure_precision": 0.36077481840193704,
+    "failure_recall": 0.6962616822429907,
+    "failure_f1": 0.47527910685805425,
+    "positive_label": "failure",
+    "classes_ordered": [
+      "failure",
+      "success"
+    ],
+    "confusion_matrix": [
+      [
+        149,
+        65
+      ],
+      [
+        264,
+        1477
+      ]
+    ],
+    "roc_auc": 0.8610316339841212,
+    "pr_auc": 0.4729343928154378
+  },
+  "expected_feature_columns": [
+    "log_lines_added",
+    "log_lines_deleted",
+    "log_files_changed",
+    "commit_message_length",
+    "avg_lines_per_file",
+    "repository",
+    "workflow_name",
+    "branch",
+    "event",
+    "is_large_commit",
+    "is_many_files",
+    "is_weekend_commit",
+    "is_off_hours_commit",
+    "is_bot_author",
+    "was_truncated",
+    "commit_message_clean"
+  ],
+  "target_column": "conclusion",
+  "positive_label": "failure",
+  "fit_time_sec": 0.633,
+  "predict_time_sec": 0.122,
+  "n_test_samples": 1955
+}
