@@ -6,8 +6,9 @@ strings (`"success"` / `"failure"`), not 0/1 — XGBoost is wrapped in
 `LabelEncoderForBinary` (`src/hybrid_pipeline.py`) to keep the fit/predict
 contract uniform across the three estimators.
 
-Read [REVIEW_FINDINGS.md](REVIEW_FINDINGS.md) and [DATA_PROFILE.md](DATA_PROFILE.md)
-before changing anything. They encode verified facts that are expensive to
+**Start with [HANDOFF.md](HANDOFF.md)** — current state, the open work queue,
+and decisions already settled. Then [REVIEW_FINDINGS.md](REVIEW_FINDINGS.md) and
+[DATA_PROFILE.md](DATA_PROFILE.md) before changing anything. They encode verified facts that are expensive to
 re-derive and easy to get wrong.
 
 ## Environment

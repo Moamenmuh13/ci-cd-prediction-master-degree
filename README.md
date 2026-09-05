@@ -28,6 +28,12 @@ class.** Full profile: [`cicd-failure-prediction/DATA_PROFILE.md`](cicd-failure-
 > a mis-sorted "chronological" split and threshold selection on the test set —
 > are documented there with measurements and fixes.
 
+## Picking up the work
+
+[`cicd-failure-prediction/HANDOFF.md`](cicd-failure-prediction/HANDOFF.md) —
+current state, prioritized work queue with file:line references, and settled
+decisions. Read it before starting a session on a new machine.
+
 ## Layout
 
 ```

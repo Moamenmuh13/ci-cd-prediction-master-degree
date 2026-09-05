@@ -1,0 +1,44 @@
+2026-05-29 07:41:47 | INFO    | __main__ | Resuming with 0 previously collected run_ids.
+2026-05-29 07:41:47 | INFO    | __main__ | === facebook/react — starting ===
+2026-05-29 07:45:40 | INFO    | __main__ | facebook/react: kept 600 / scanned 692 (running total: 600)
+2026-05-29 07:45:40 | INFO    | __main__ | === microsoft/vscode — starting ===
+2026-05-29 07:50:17 | INFO    | __main__ | microsoft/vscode: kept 600 / scanned 920 (running total: 1200)
+2026-05-29 07:50:17 | INFO    | __main__ | === tensorflow/tensorflow — starting ===
+2026-05-29 07:54:11 | INFO    | __main__ | tensorflow/tensorflow: kept 600 / scanned 668 (running total: 1800)
+2026-05-29 07:54:11 | INFO    | __main__ | === pytorch/pytorch — starting ===
+2026-05-29 07:58:53 | INFO    | __main__ | pytorch/pytorch: kept 600 / scanned 722 (running total: 2400)
+2026-05-29 07:58:53 | INFO    | __main__ | === vuejs/vue — starting ===
+2026-05-29 07:58:54 | INFO    | __main__ | vuejs/vue: kept 0 / scanned 5 (running total: 2400)
+2026-05-29 07:58:54 | INFO    | __main__ | === nodejs/node — starting ===
+2026-05-29 08:02:51 | INFO    | __main__ | nodejs/node: kept 600 / scanned 939 (running total: 3000)
+2026-05-29 08:02:51 | INFO    | __main__ | === rust-lang/rust — starting ===
+2026-05-29 08:07:31 | INFO    | __main__ | rust-lang/rust: kept 600 / scanned 753 (running total: 3600)
+2026-05-29 08:07:31 | INFO    | __main__ | === kubernetes/kubernetes — starting ===
+2026-05-29 08:08:44 | INFO    | __main__ | kubernetes/kubernetes: kept 115 / scanned 127 (running total: 3715)
+2026-05-29 08:08:44 | INFO    | __main__ | === ansible/ansible — starting ===
+2026-05-29 08:08:44 | INFO    | __main__ | ansible/ansible: kept 0 / scanned 0 (running total: 3715)
+2026-05-29 08:08:44 | INFO    | __main__ | === elastic/elasticsearch — starting ===
+2026-05-29 08:13:23 | INFO    | __main__ | elastic/elasticsearch: kept 600 / scanned 631 (running total: 4315)
+2026-05-29 08:13:23 | INFO    | __main__ | === nestjs/nest — starting ===
+2026-05-29 08:16:57 | WARNING | __main__ | Approaching rate limit (remaining=99). Sleeping 1496s until reset.
+2026-05-29 08:42:38 | INFO    | __main__ | nestjs/nest: kept 600 / scanned 615 (running total: 4915)
+2026-05-29 08:42:38 | INFO    | __main__ | === expressjs/express — starting ===
+2026-05-29 08:46:27 | INFO    | __main__ | expressjs/express: kept 600 / scanned 661 (running total: 5515)
+2026-05-29 08:46:27 | INFO    | __main__ | === pandas-dev/pandas — starting ===
+2026-05-29 08:49:04 | INFO    | __main__ | pandas-dev/pandas: kept 357 / scanned 1000 (running total: 5872)
+2026-05-29 08:49:04 | INFO    | __main__ | === scikit-learn/scikit-learn — starting ===
+2026-05-29 08:52:20 | INFO    | __main__ | scikit-learn/scikit-learn: kept 479 / scanned 1000 (running total: 6351)
+2026-05-29 08:52:20 | INFO    | __main__ | === huggingface/transformers — starting ===
+2026-05-29 08:56:44 | INFO    | __main__ | huggingface/transformers: kept 594 / scanned 1000 (running total: 6945)
+2026-05-29 08:56:44 | INFO    | __main__ | === prisma/prisma — starting ===
+2026-05-29 09:00:52 | INFO    | __main__ | prisma/prisma: kept 600 / scanned 936 (running total: 7545)
+2026-05-29 09:00:52 | INFO    | __main__ | === vercel/next.js — starting ===
+2026-05-29 09:05:16 | INFO    | __main__ | vercel/next.js: kept 600 / scanned 926 (running total: 8145)
+2026-05-29 09:05:16 | INFO    | __main__ | === sveltejs/svelte — starting ===
+2026-05-29 09:08:23 | INFO    | __main__ | sveltejs/svelte: kept 427 / scanned 1000 (running total: 8572)
+2026-05-29 09:08:23 | INFO    | __main__ | === ruby/ruby — starting ===
+2026-05-29 09:12:15 | INFO    | __main__ | ruby/ruby: kept 600 / scanned 793 (running total: 9172)
+2026-05-29 09:12:15 | INFO    | __main__ | === python/cpython — starting ===
+2026-05-29 09:14:54 | WARNING | __main__ | Approaching rate limit (remaining=99). Sleeping 1625s until reset.
+2026-05-29 09:43:33 | INFO    | __main__ | python/cpython: kept 600 / scanned 648 (running total: 9772)
+2026-05-29 09:43:33 | INFO    | __main__ | Collection finished in 7306.7s (121.78 minutes). Total rows: 9772

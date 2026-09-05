@@ -1,26 +1,21 @@
-# --- Secrets / local config -------------------------------------------------
+# Virtual environments — the ONLY deliberate exclusion of project content
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets — never commit
 .env
 .env.*
 *.pem
 *.key
-.claude/settings.local.json     # contains a GitHub PAT in permission entries
+.claude/settings.local.json     # contains a live GitHub PAT in permission entries
 
-# --- Python -----------------------------------------------------------------
-.venv/
-venv/
+# Machine artifacts (regenerated; committing them causes stale-bytecode bugs)
 __pycache__/
 *.py[cod]
-*.egg-info/
+*$py.class
 .ipynb_checkpoints/
 
-# --- Office lock / temp files -----------------------------------------------
+# Office lock files (162-byte stubs, not content)
 ~$*
-*.tmp
-
-# --- Derived data (regenerate with `python -m src.run_phase2_5`) ------------
-cicd-failure-prediction/data/processed/
-
-# --- OS ---------------------------------------------------------------------
-.DS_Store
-Thumbs.db
-desktop.ini
