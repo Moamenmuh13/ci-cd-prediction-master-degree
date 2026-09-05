@@ -1,21 +1,11 @@
-# Virtual environments — the ONLY deliberate exclusion of project content
+# Virtual environments — the only deliberate exclusion of project content
 .venv/
 venv/
 env/
 ENV/
 
-# Secrets — never commit
-.env
-.env.*
-*.pem
-*.key
-.claude/settings.local.json     # contains a live GitHub PAT in permission entries
-
-# Machine artifacts (regenerated; committing them causes stale-bytecode bugs)
+# Machine artifacts (regenerated; committing .pyc causes stale-bytecode bugs)
 __pycache__/
 *.py[cod]
 *$py.class
 .ipynb_checkpoints/
-
-# Office lock files (162-byte stubs, not content)
-~$*
